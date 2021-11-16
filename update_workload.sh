@@ -3,30 +3,40 @@
 if [ -z ${PLUGIN_WORKLOAD} ]; then
   echo "missing Workload name"
   exit 1
+  else
+  echo "Workload OK"
 fi
 
 ## UPDATES_IMAGE = imagem atualizada no ECR
 if [ -z ${PLUGIN_UPDATED_IMAGE} ]; then
   echo "missing image"
   exit 1
+  else
+  echo "Image OK"
 fi
 
 ## NAMESPACE = name space do workload
 if [ -z ${PLUGIN_NAMESPACE} ]; then
   echo "missing Namespace"
   exit 1
+  else
+  echo "Namespace OK"
 fi
 
 ## CLUSTER = Cluster configured in k8s config file
 if [ -z ${PLUGIN_CLUSTER} ]; then
   echo "missing Cluster"
   exit 1
+  else
+  echo "Cluster OK"
 fi
 
 ## USER = User configured in k8s config file
 if [ -z ${PLUGIN_USER} ]; then
   echo "missing User"
   exit 1
+  else
+  echo "User OK"
 fi
 
 #### Criação do arquivo de conf V1
