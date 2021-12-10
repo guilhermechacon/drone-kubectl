@@ -53,4 +53,4 @@ PWD=$(pwd)/config
     kubectl config --kubeconfig=config use-context local
 
 #### Primeiro Comando kubectl V1
-kubectl --kubeconfig=${PWD} rollout restart deploy ${PLUGIN_WORKLOAD} -n ${PLUGIN_NAMESPACE}
+kubectl --kubeconfig=${PWD} rollout restart deploy ${PLUGIN_WORKLOAD} -n ${PLUGIN_NAMESPACE} ${PLUGIN_OPTIONS}
